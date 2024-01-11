@@ -46,7 +46,7 @@ public class Employee {
 		System.out.println("mul");
 		int a = 10;
 		int b = 20;
-		AssertJUnit.assertEquals(200, a*b);
+		AssertJUnit.assertEquals(20, a*b);
 	}
 	@Test
 	public void div() {
