@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.AssertJUnit;
 
 public class Employee {
@@ -18,7 +19,9 @@ public class Employee {
 		
 		System.setProperty("webdriver.edge.driver", "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver");
 	//	WebDriverManager.edgedriver().setup(); ///home/fs-pratik/Downloads/edgedriver_linux64
-		WebDriver driver = new EdgeDriver();
+		EdgeOptions opt = new EdgeOptions();
+		opt.addArguments("--headless=new");
+		WebDriver driver = new EdgeDriver(opt);
 		Thread.sleep(30);
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.com/");
