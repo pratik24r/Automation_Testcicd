@@ -15,7 +15,7 @@ public class Employee {
 	@BeforeClass
 	public void Validate_url() {
 		
-		System.setProperty("webdriver.edge.driver", "/home/fs-pratik/Downloads/edgedriver_linux64/msedgedriver");
+		System.setProperty("webdriver.edge.driver", "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver");
 	//	WebDriverManager.edgedriver().setup(); ///home/fs-pratik/Downloads/edgedriver_linux64
 		WebDriver driver = new EdgeDriver();
 		
