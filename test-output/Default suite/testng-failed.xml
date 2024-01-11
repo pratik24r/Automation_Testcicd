@@ -6,7 +6,7 @@
       <class name="com.qa.tests.Employee">
         <methods>
           <include name="Validate_url"/>
-          <include name="mul"/>
+          <include name="sum"/>
         </methods>
       </class> <!-- com.qa.tests.Employee -->
     </classes>

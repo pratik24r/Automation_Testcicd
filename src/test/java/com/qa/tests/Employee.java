@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -46,7 +45,7 @@ public class Employee {
 		System.out.println("mul");
 		int a = 10;
 		int b = 20;
-		AssertJUnit.assertEquals(20, a*b);
+		AssertJUnit.assertEquals(200, a*b);
 	}
 	@Test
 	public void div() {
