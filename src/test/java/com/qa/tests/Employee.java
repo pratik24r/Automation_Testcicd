@@ -18,9 +18,9 @@ public class Employee {
 		
 		System.setProperty("webdriver.edge.driver", "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver");
 	//	WebDriverManager.edgedriver().setup(); ///home/fs-pratik/Downloads/edgedriver_linux64
-		EdgeOptions opt = new EdgeOptions();
-		opt.addArguments("--headless=new");
-		WebDriver driver = new EdgeDriver(opt);
+	//	EdgeOptions opt = new EdgeOptions();
+	//	opt.addArguments("--headless=new");
+		WebDriver driver = new EdgeDriver();
 		Thread.sleep(30);
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.com/");
