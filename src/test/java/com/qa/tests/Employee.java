@@ -5,22 +5,24 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.AssertJUnit;
 
 public class Employee {
-	
 		
 	@BeforeClass
-	public void Validate_url() {
+	public void Validate_url() throws InterruptedException {
 		
 		System.setProperty("webdriver.edge.driver", "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver");
 	//	WebDriverManager.edgedriver().setup(); ///home/fs-pratik/Downloads/edgedriver_linux64
 		WebDriver driver = new EdgeDriver();
-		
+		Thread.sleep(30);
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.com/");
+
 	}
 	@Test
 	public void sum() {
