@@ -1,29 +1,384 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="0" failed="0" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-12T09:29:20 IST" name="Default suite" finished-at="2024-01-12T09:29:26 IST" duration-ms="5712">
+  <suite started-at="2024-01-12T10:28:28 IST" name="Default suite" finished-at="2024-01-12T10:28:29 IST" duration-ms="530">
     <groups>
     </groups>
-    <test started-at="2024-01-12T09:29:20 IST" name="Default test" finished-at="2024-01-12T09:29:26 IST" duration-ms="5712">
+    <test started-at="2024-01-12T10:28:28 IST" name="Default test" finished-at="2024-01-12T10:28:29 IST" duration-ms="530">
       <class name="com.qa.tests.Employee">
-        <test-method is-config="true" signature="Validate_url()[pri:0, instance:com.qa.tests.Employee@14dd7b39]" started-at="2024-01-12T09:29:20 IST" name="Validate_url" finished-at="2024-01-12T09:29:25 IST" duration-ms="5638" status="PASS">
+        <test-method is-config="true" signature="Validate_url()[pri:0, instance:com.qa.tests.Employee@14dd7b39]" started-at="2024-01-12T10:28:28 IST" name="Validate_url" finished-at="2024-01-12T10:28:29 IST" duration-ms="448" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'fspratik-ThinkPad-L480', ip: '127.0.1.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-91-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'fspratik-ThinkPad-L480', ip: '127.0.1.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-91-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:61)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:57)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:49)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:45)
+at com.qa.tests.Employee.Validate_url(Employee.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver": error=26, Text file busy
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:208)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:119)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+... 34 more
+Caused by: java.io.IOException: Cannot run program "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver": error=26, Text file busy
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:191)
+... 37 more
+Caused by: java.io.IOException: error=26, Text file busy
+at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:271)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validate_url -->
-        <test-method signature="div()[pri:0, instance:com.qa.tests.Employee@14dd7b39]" started-at="2024-01-12T09:29:25 IST" name="div" finished-at="2024-01-12T09:29:26 IST" duration-ms="7" status="PASS">
+        <test-method signature="div()[pri:0, instance:com.qa.tests.Employee@14dd7b39]" started-at="2024-01-12T10:28:29 IST" name="div" finished-at="2024-01-12T10:28:29 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'fspratik-ThinkPad-L480', ip: '127.0.1.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-91-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'fspratik-ThinkPad-L480', ip: '127.0.1.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-91-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:61)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:57)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:49)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:45)
+at com.qa.tests.Employee.Validate_url(Employee.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver": error=26, Text file busy
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:208)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:119)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+... 34 more
+Caused by: java.io.IOException: Cannot run program "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver": error=26, Text file busy
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:191)
+... 37 more
+Caused by: java.io.IOException: error=26, Text file busy
+at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:271)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- div -->
-        <test-method signature="mul()[pri:0, instance:com.qa.tests.Employee@14dd7b39]" started-at="2024-01-12T09:29:26 IST" name="mul" finished-at="2024-01-12T09:29:26 IST" duration-ms="1" status="PASS">
+        <test-method signature="mul()[pri:0, instance:com.qa.tests.Employee@14dd7b39]" started-at="2024-01-12T10:28:29 IST" name="mul" finished-at="2024-01-12T10:28:29 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'fspratik-ThinkPad-L480', ip: '127.0.1.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-91-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'fspratik-ThinkPad-L480', ip: '127.0.1.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-91-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:61)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:57)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:49)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:45)
+at com.qa.tests.Employee.Validate_url(Employee.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver": error=26, Text file busy
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:208)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:119)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+... 34 more
+Caused by: java.io.IOException: Cannot run program "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver": error=26, Text file busy
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:191)
+... 37 more
+Caused by: java.io.IOException: error=26, Text file busy
+at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:271)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mul -->
-        <test-method signature="sub()[pri:0, instance:com.qa.tests.Employee@14dd7b39]" started-at="2024-01-12T09:29:26 IST" name="sub" finished-at="2024-01-12T09:29:26 IST" duration-ms="1" status="PASS">
+        <test-method signature="sub()[pri:0, instance:com.qa.tests.Employee@14dd7b39]" started-at="2024-01-12T10:28:29 IST" name="sub" finished-at="2024-01-12T10:28:29 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'fspratik-ThinkPad-L480', ip: '127.0.1.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-91-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'fspratik-ThinkPad-L480', ip: '127.0.1.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-91-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:61)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:57)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:49)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:45)
+at com.qa.tests.Employee.Validate_url(Employee.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver": error=26, Text file busy
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:208)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:119)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+... 34 more
+Caused by: java.io.IOException: Cannot run program "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver": error=26, Text file busy
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:191)
+... 37 more
+Caused by: java.io.IOException: error=26, Text file busy
+at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:271)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sub -->
-        <test-method signature="sum()[pri:0, instance:com.qa.tests.Employee@14dd7b39]" started-at="2024-01-12T09:29:26 IST" name="sum" finished-at="2024-01-12T09:29:26 IST" duration-ms="0" status="PASS">
+        <test-method signature="sum()[pri:0, instance:com.qa.tests.Employee@14dd7b39]" started-at="2024-01-12T10:28:29 IST" name="sum" finished-at="2024-01-12T10:28:29 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'fspratik-ThinkPad-L480', ip: '127.0.1.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-91-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'fspratik-ThinkPad-L480', ip: '127.0.1.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-91-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:61)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:57)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:49)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:45)
+at com.qa.tests.Employee.Validate_url(Employee.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver": error=26, Text file busy
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:208)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:119)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+... 34 more
+Caused by: java.io.IOException: Cannot run program "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver": error=26, Text file busy
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:191)
+... 37 more
+Caused by: java.io.IOException: error=26, Text file busy
+at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:271)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sum -->
