@@ -5,11 +5,8 @@
     <classes>
       <class name="com.qa.tests.Employee">
         <methods>
-          <include name="sub"/>
+          <include name="user_name"/>
           <include name="Validate_url"/>
-          <include name="div"/>
-          <include name="mul"/>
-          <include name="sum"/>
         </methods>
       </class> <!-- com.qa.tests.Employee -->
     </classes>

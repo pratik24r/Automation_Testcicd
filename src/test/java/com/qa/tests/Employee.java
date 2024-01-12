@@ -1,58 +1,75 @@
 package com.qa.tests;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
-import org.testng.AssertJUnit;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
 
 public class Employee {
+	WebDriver driver;
 		
-	@BeforeClass
+	@BeforeTest
 	public void Validate_url() throws InterruptedException {
 		
-		System.setProperty("webdriver.edge.driver", "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver");
-	//	WebDriverManager.edgedriver().setup(); ///home/fs-pratik/Downloads/edgedriver_linux64
+	//	System.setProperty("webdriver.edge.driver", "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver");
+		WebDriverManager.chromedriver().setup(); ///home/fs-pratik/Downloads/edgedriver_linux64
 	//	EdgeOptions opt = new EdgeOptions();
 	//	opt.addArguments("--headless=new");
-		WebDriver driver = new EdgeDriver();
-		Thread.sleep(30);
+	    driver = new ChromeDriver();
+	//	Thread.sleep(30);
 		driver.manage().window().maximize();
-		driver.get("https://www.amazon.com/");
+		driver.get("http://localhost:8181/azure-employee-2.2-SNAPSHOT/");
+	}
+	
+	@Test
+	public void launch() {
+		driver.get("http://localhost:8181/azure-employee-2.2-SNAPSHOT/");
+	}
+	
+	@Test
+	public void user_name() {
+	    driver.findElement(By.id("user_input")).sendKeys("pratik rathi");
+	    driver.findElement(By.id("add_input")).sendKeys("pune");
+	    driver.findElement(By.id("age_input")).sendKeys("25");
+	    driver.findElement(By.id("quli_input")).sendKeys("BCCA");
+	    driver.findElement(By.id("jd_input")).sendKeys("27");
+	    driver.findElement(By.xpath("/html/body/div[2]/input")).click();
+	}
+	
+/*	@Test
+	public void loca() {
+		 driver.findElement(By.id("add_input")).sendKeys("pune");
+	}
+	
+	@Test
+	public void age_per() {
+		 driver.findElement(By.id("age_input")).sendKeys("25");
+	}
+	
+	
+	@Test
+	public void joining() {
+		 driver.findElement(By.id("jd_input")).sendKeys("27");
+	}
+	
+	@Test()
+	public void click() {
+		WebElement log = driver.findElement(By.xpath("/html/body/div[2]/input"));
+	    log.click();
+	}*/
+		
 
-	}
-	@Test
-	public void sum() {
-		System.out.println("sum");
-		int a = 10;
-		int b = 20;
-		AssertJUnit.assertEquals(30, a+b);
-	}
-	@Test
-	public void sub() {
-		System.out.println("sub");
-		int a = 10;
-		int b = 20;
-		AssertJUnit.assertEquals(10, b-a);
-	}
-	@Test
-	public void mul() {
-		System.out.println("mul");
-		int a = 10;
-		int b = 20;
-		AssertJUnit.assertEquals(200, a*b);
-	}
-	@Test
-	public void div() {
-		System.out.println("div");
-		int a = 10;
-		int b = 20;
-		AssertJUnit.assertEquals(2, b/a);
-	}
+	
+	
+	
 	
 }
