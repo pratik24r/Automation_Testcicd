@@ -16,7 +16,7 @@ public class Employee {
 	@BeforeClass
 	public void Validate_url() throws InterruptedException {
 		
-		System.setProperty("webdriver.edge.driver", "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver");
+		System.setProperty("webdriver.edge.logfile", "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver");
 	//	WebDriverManager.edgedriver().setup(); ///home/fs-pratik/Downloads/edgedriver_linux64
 	//	EdgeOptions opt = new EdgeOptions();
 	//	opt.addArguments("--headless=new");
