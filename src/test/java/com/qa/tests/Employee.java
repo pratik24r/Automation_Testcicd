@@ -10,6 +10,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeOptions;
 
 
 
@@ -22,9 +24,9 @@ public class Employee {
 		
 	//	System.setProperty("webdriver.edge.driver", "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver");
 		WebDriverManager.chromedriver().setup(); ///home/fs-pratik/Downloads/edgedriver_linux64
-	//	EdgeOptions opt = new EdgeOptions();
-	//	opt.addArguments("--headless=new");
-	    driver = new ChromeDriver();
+		ChromeOptions opt = new ChromeOptions();
+		opt.addArguments("--headless=new");
+	    driver = new ChromeDriver(opt);
 	//	Thread.sleep(30);
 		driver.manage().window().maximize();
 		driver.get("http://localhost:8181/azure-employee-2.2-SNAPSHOT/");
@@ -54,7 +56,7 @@ public class Employee {
 	public void age_per() {
 		 driver.findElement(By.id("age_input")).sendKeys("25");
 	}
-	
+	 
 	
 	@Test
 	public void joining() {
