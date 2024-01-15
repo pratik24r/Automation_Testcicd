@@ -24,9 +24,9 @@ public class Employee {
 		
 	//	System.setProperty("webdriver.edge.driver", "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver");
 		WebDriverManager.chromedriver().setup(); ///home/fs-pratik/Downloads/edgedriver_linux64
-		ChromeOptions opt = new ChromeOptions();
-		opt.addArguments("--headless=new");
-	    driver = new ChromeDriver(opt);
+	//	ChromeOptions opt = new ChromeOptions();
+	//	opt.addArguments("--headless=new");
+	    driver = new ChromeDriver();
 	//	Thread.sleep(30);
 		driver.manage().window().maximize();
 		driver.get("http://localhost:8181/azure-employee-2.2-SNAPSHOT/");
