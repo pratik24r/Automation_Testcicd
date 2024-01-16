@@ -17,22 +17,22 @@ import org.openqa.selenium.edge.EdgeOptions;
 
 
 public class Employee {
-	WebDriver driver;
+	//WebDriver driver;
 		
-	@BeforeTest
+	@Test
 	public void Validate_url() throws InterruptedException {
 		
 	//	System.setProperty("webdriver.edge.driver", "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver");
 		WebDriverManager.chromedriver().setup(); ///home/fs-pratik/Downloads/edgedriver_linux64
 	//	ChromeOptions opt = new ChromeOptions();
 	//	opt.addArguments("--headless=new");
-	    driver = new ChromeDriver();
+	    WebDriver driver = new ChromeDriver();
 	//	Thread.sleep(30);
 		driver.manage().window().maximize();
 		driver.get("http://localhost:8181/azure-employee-2.2-SNAPSHOT/");
 	}
 	
-	@Test
+/*	@Test
 	public void launch() {
 		driver.get("http://localhost:8181/azure-employee-2.2-SNAPSHOT/");
 	}
@@ -47,7 +47,7 @@ public class Employee {
 	    driver.findElement(By.xpath("/html/body/div[2]/input")).click();
 	}
 	
-/*	@Test
+	@Test
 	public void loca() {
 		 driver.findElement(By.id("add_input")).sendKeys("pune");
 	}

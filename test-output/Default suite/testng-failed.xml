@@ -6,8 +6,6 @@
       <class name="com.qa.tests.Employee">
         <methods>
           <include name="Validate_url"/>
-          <include name="user_name"/>
-          <include name="launch"/>
         </methods>
       </class> <!-- com.qa.tests.Employee -->
     </classes>
