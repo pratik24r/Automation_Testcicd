@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-16T09:29:17 IST" name="Default suite" finished-at="2024-01-16T09:29:20 IST" duration-ms="2605">
+  <suite started-at="2024-01-17T11:53:27 IST" name="Default suite" finished-at="2024-01-17T11:53:30 IST" duration-ms="2882">
     <groups>
     </groups>
-    <test started-at="2024-01-16T09:29:17 IST" name="Default test" finished-at="2024-01-16T09:29:20 IST" duration-ms="2605">
+    <test started-at="2024-01-17T11:53:27 IST" name="Default test" finished-at="2024-01-17T11:53:30 IST" duration-ms="2882">
       <class name="com.qa.tests.Employee">
-        <test-method is-config="true" signature="Validate_url()[pri:0, instance:com.qa.tests.Employee@4007f65e]" started-at="2024-01-16T09:29:17 IST" name="Validate_url" finished-at="2024-01-16T09:29:19 IST" duration-ms="2140" status="PASS">
+        <test-method signature="Validate_url()[pri:0, instance:com.qa.tests.Employee@7d9d0818]" started-at="2024-01-17T11:53:28 IST" name="Validate_url" finished-at="2024-01-17T11:53:30 IST" duration-ms="2326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validate_url -->
-        <test-method signature="launch()[pri:0, instance:com.qa.tests.Employee@4007f65e]" started-at="2024-01-16T09:29:19 IST" name="launch" finished-at="2024-01-16T09:29:19 IST" duration-ms="24" status="PASS">
+        <test-method signature="launch()[pri:0, instance:com.qa.tests.Employee@7d9d0818]" started-at="2024-01-17T11:53:30 IST" name="launch" finished-at="2024-01-17T11:53:30 IST" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="user_name()[pri:0, instance:com.qa.tests.Employee@4007f65e]" started-at="2024-01-16T09:29:19 IST" name="user_name" finished-at="2024-01-16T09:29:20 IST" duration-ms="398" status="PASS">
+        <test-method signature="user_name()[pri:0, instance:com.qa.tests.Employee@7d9d0818]" started-at="2024-01-17T11:53:30 IST" name="user_name" finished-at="2024-01-17T11:53:30 IST" duration-ms="390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_name -->

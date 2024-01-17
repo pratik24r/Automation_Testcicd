@@ -19,7 +19,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 public class Employee {
 	WebDriver driver;
 		
-	@BeforeTest
+	@Test
 	public void Validate_url() throws InterruptedException {
 		
 	//	System.setProperty("webdriver.edge.driver", "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver");
