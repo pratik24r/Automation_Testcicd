@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 
 
@@ -23,10 +24,10 @@ public class Employee {
 	public void Validate_url() throws InterruptedException {
 		
 	//	System.setProperty("webdriver.edge.driver", "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver");
-		WebDriverManager.chromedriver().setup(); ///home/fs-pratik/Downloads/edgedriver_linux64
+		WebDriverManager.edgedriver().setup(); ///home/fs-pratik/Downloads/edgedriver_linux64
 	//	ChromeOptions opt = new ChromeOptions();
 	//	opt.addArguments("--headless=new");
-	    driver = new ChromeDriver();
+	    driver = new EdgeDriver();
 	//	Thread.sleep(30);
 		driver.manage().window().maximize();
 		driver.get("http://localhost:8181/azure-employee-2.2-SNAPSHOT/");

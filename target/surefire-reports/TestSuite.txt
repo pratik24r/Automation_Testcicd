@@ -1,4 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.819 s - in TestSuite
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1.702 s <<< FAILURE! - in TestSuite
+com.qa.tests.Employee.Validate_url  Time elapsed: 1.207 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location /usr/bin/microsoft-edge is no longer running, so msedgedriver is assuming that msedge has crashed.) 
+Host info: host: 'fspratik-ThinkPad-L480', ip: '127.0.1.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-91-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}]}]
+	at com.qa.tests.Employee.Validate_url(Employee.java:30)
+
+com.qa.tests.Employee.launch  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at com.qa.tests.Employee.launch(Employee.java:38)
+
+com.qa.tests.Employee.user_name  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at com.qa.tests.Employee.user_name(Employee.java:43)
+
