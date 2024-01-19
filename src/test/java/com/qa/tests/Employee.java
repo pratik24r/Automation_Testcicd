@@ -20,7 +20,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 public class Employee {
 	WebDriver driver;
 		
-	@Test
+	@BeforeTest
 	public void Validate_url() throws InterruptedException {
 		
 	//	System.setProperty("webdriver.edge.driver", "/home/fs-pratik/Downloads/edgedriver_linux64 (1)/msedgedriver");
@@ -30,11 +30,6 @@ public class Employee {
 	    driver = new EdgeDriver();
 	//	Thread.sleep(30);
 		driver.manage().window().maximize();
-		driver.get("http://localhost:8181/azure-employee-2.2-SNAPSHOT/");
-	}
-	
-	@Test
-	public void launch() {
 		driver.get("http://localhost:8181/azure-employee-2.2-SNAPSHOT/");
 	}
 	

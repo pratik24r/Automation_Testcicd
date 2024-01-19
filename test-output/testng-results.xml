@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-17T12:43:52 IST" name="Default suite" finished-at="2024-01-17T12:44:05 IST" duration-ms="13476">
+  <suite started-at="2024-01-19T12:08:43 IST" name="Default suite" finished-at="2024-01-19T12:08:46 IST" duration-ms="2718">
     <groups>
     </groups>
-    <test started-at="2024-01-17T12:43:52 IST" name="Default test" finished-at="2024-01-17T12:44:05 IST" duration-ms="13476">
+    <test started-at="2024-01-19T12:08:43 IST" name="Default test" finished-at="2024-01-19T12:08:46 IST" duration-ms="2718">
       <class name="com.qa.tests.Employee">
-        <test-method signature="Validate_url()[pri:0, instance:com.qa.tests.Employee@7d9d0818]" started-at="2024-01-17T12:43:52 IST" name="Validate_url" finished-at="2024-01-17T12:44:05 IST" duration-ms="12809" status="PASS">
+        <test-method is-config="true" signature="Validate_url()[pri:0, instance:com.qa.tests.Employee@6f01b95f]" started-at="2024-01-19T12:08:43 IST" name="Validate_url" finished-at="2024-01-19T12:08:45 IST" duration-ms="2198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validate_url -->
-        <test-method signature="launch()[pri:0, instance:com.qa.tests.Employee@7d9d0818]" started-at="2024-01-17T12:44:05 IST" name="launch" finished-at="2024-01-17T12:44:05 IST" duration-ms="66" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="user_name()[pri:0, instance:com.qa.tests.Employee@7d9d0818]" started-at="2024-01-17T12:44:05 IST" name="user_name" finished-at="2024-01-17T12:44:05 IST" duration-ms="550" status="PASS">
+        <test-method signature="user_name()[pri:0, instance:com.qa.tests.Employee@6f01b95f]" started-at="2024-01-19T12:08:45 IST" name="user_name" finished-at="2024-01-19T12:08:46 IST" duration-ms="465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_name -->
